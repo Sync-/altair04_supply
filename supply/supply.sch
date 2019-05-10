@@ -1,4 +1,4 @@
-EESchema Schematic File Version 5
+EESchema Schematic File Version 4
 LIBS:supply-cache
 EELAYER 29 0
 EELAYER END
@@ -14,214 +14,109 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L stmbl:D D1
-U 1 1 5CC78DDE
-P 2300 1200
-F 0 "D1" V 2254 1278 50  0000 L CNN
-F 1 "D" V 2345 1278 50  0000 L CNN
-F 2 "stmbl:SMA_Standard" H 2300 1200 50  0001 C CNN
-F 3 "" H 2300 1200 50  0000 C CNN
-	1    2300 1200
-	0    1    1    0   
-$EndComp
-$Comp
-L stmbl:D D3
-U 1 1 5CC79901
-P 2600 1200
-F 0 "D3" V 2554 1278 50  0000 L CNN
-F 1 "D" V 2645 1278 50  0000 L CNN
-F 2 "stmbl:SMA_Standard" H 2600 1200 50  0001 C CNN
-F 3 "" H 2600 1200 50  0000 C CNN
-	1    2600 1200
-	0    1    1    0   
-$EndComp
-$Comp
-L stmbl:D D5
-U 1 1 5CC79AC8
-P 2900 1200
-F 0 "D5" V 2854 1278 50  0000 L CNN
-F 1 "D" V 2945 1278 50  0000 L CNN
-F 2 "stmbl:SMA_Standard" H 2900 1200 50  0001 C CNN
-F 3 "" H 2900 1200 50  0000 C CNN
-	1    2900 1200
-	0    1    1    0   
-$EndComp
-$Comp
-L stmbl:D D6
-U 1 1 5CC79C1C
-P 2900 2000
-F 0 "D6" V 2854 2078 50  0000 L CNN
-F 1 "D" V 2945 2078 50  0000 L CNN
-F 2 "stmbl:SMA_Standard" H 2900 2000 50  0001 C CNN
-F 3 "" H 2900 2000 50  0000 C CNN
-	1    2900 2000
-	0    1    1    0   
-$EndComp
-$Comp
-L stmbl:D D4
-U 1 1 5CC79DD4
-P 2600 2000
-F 0 "D4" V 2554 2078 50  0000 L CNN
-F 1 "D" V 2645 2078 50  0000 L CNN
-F 2 "stmbl:SMA_Standard" H 2600 2000 50  0001 C CNN
-F 3 "" H 2600 2000 50  0000 C CNN
-	1    2600 2000
-	0    1    1    0   
-$EndComp
-$Comp
-L stmbl:D D2
-U 1 1 5CC79EAF
-P 2300 2000
-F 0 "D2" V 2254 2078 50  0000 L CNN
-F 1 "D" V 2345 2078 50  0000 L CNN
-F 2 "stmbl:SMA_Standard" H 2300 2000 50  0001 C CNN
-F 3 "" H 2300 2000 50  0000 C CNN
-	1    2300 2000
-	0    1    1    0   
-$EndComp
 Text GLabel 1300 1600 0    50   Input ~ 0
 L2
 Text GLabel 850  2000 0    50   Input ~ 0
 L3
-Wire Wire Line
-	2300 1850 2300 1450
-Wire Wire Line
-	2600 1350 2600 1600
-Wire Wire Line
-	2900 1850 2900 1750
-Wire Wire Line
-	2050 1450 2300 1450
-Connection ~ 2300 1450
-Wire Wire Line
-	2300 1450 2300 1350
-Connection ~ 2600 1600
-Wire Wire Line
-	2600 1600 2600 1850
-Wire Wire Line
-	2050 1750 2900 1750
-Connection ~ 2900 1750
-Wire Wire Line
-	2900 1750 2900 1350
-Wire Wire Line
-	2300 1050 2600 1050
-Connection ~ 2600 1050
-Wire Wire Line
-	2600 1050 2900 1050
-Wire Wire Line
-	2300 2150 2600 2150
-Connection ~ 2600 2150
-Wire Wire Line
-	2600 2150 2900 2150
-Text GLabel 2600 950  1    50   Input ~ 0
+Text GLabel 2850 1050 1    50   Input ~ 0
 DC+
 Wire Wire Line
-	2600 2150 2600 2250
-Wire Wire Line
-	2600 950  2600 1050
+	2850 1050 2850 1150
 $Comp
 L stmbl:C C8
 U 1 1 5CC83619
-P 4200 1200
-F 0 "C8" H 4315 1246 50  0000 L CNN
-F 1 "DNP" H 4315 1155 50  0000 L CIN
-F 2 "" H 4315 1109 50  0001 L CNN
-F 3 "" H 4200 1200 50  0000 C CNN
-	1    4200 1200
+P 3950 1550
+F 0 "C8" H 4065 1596 50  0000 L CNN
+F 1 "DNP" H 4065 1505 50  0000 L CIN
+F 2 "" H 4065 1459 50  0001 L CNN
+F 3 "" H 3950 1550 50  0000 C CNN
+	1    3950 1550
 	1    0    0    -1  
 $EndComp
 $Comp
 L stmbl:CP C6
 U 1 1 5CC83ADB
-P 3850 1200
-F 0 "C6" H 3968 1246 50  0000 L CNN
-F 1 "47µ" H 3968 1155 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 3888 1050 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/420/United-Chemi-Con-1511408.pdf" H 3850 1200 50  0001 C CNN
-	1    3850 1200
+P 3600 1550
+F 0 "C6" H 3718 1596 50  0000 L CNN
+F 1 "47µ" H 3718 1505 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 3638 1400 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/420/United-Chemi-Con-1511408.pdf" H 3600 1550 50  0001 C CNN
+	1    3600 1550
 	1    0    0    -1  
 $EndComp
 $Comp
 L stmbl:R R7
 U 1 1 5CC842FF
-P 3500 1200
-F 0 "R7" H 3570 1246 50  0000 L CNN
-F 1 "6.8M" H 3570 1155 50  0000 L CNN
-F 2 "stmbl:R_1206" V 3430 1200 50  0001 C CNN
-F 3 "" H 3500 1200 50  0000 C CNN
-	1    3500 1200
+P 3250 1550
+F 0 "R7" H 3320 1596 50  0000 L CNN
+F 1 "6.8M" H 3320 1505 50  0000 L CNN
+F 2 "stmbl:R_1206" V 3180 1550 50  0001 C CNN
+F 3 "" H 3250 1550 50  0000 C CNN
+	1    3250 1550
 	1    0    0    -1  
 $EndComp
 $Comp
 L stmbl:C C9
 U 1 1 5CCAFFB2
-P 4200 2000
-F 0 "C9" H 4315 2046 50  0000 L CNN
-F 1 "DNP" H 4315 1955 50  0000 L CIN
-F 2 "" H 4315 1909 50  0001 L CNN
-F 3 "" H 4200 2000 50  0000 C CNN
-	1    4200 2000
+P 3950 2350
+F 0 "C9" H 4065 2396 50  0000 L CNN
+F 1 "DNP" H 4065 2305 50  0000 L CIN
+F 2 "" H 4065 2259 50  0001 L CNN
+F 3 "" H 3950 2350 50  0000 C CNN
+	1    3950 2350
 	1    0    0    -1  
 $EndComp
 $Comp
 L stmbl:CP C7
 U 1 1 5CCAFFBE
-P 3850 2000
-F 0 "C7" H 3968 2046 50  0000 L CNN
-F 1 "47µ" H 3968 1955 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 3888 1850 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/420/United-Chemi-Con-1511408.pdf" H 3850 2000 50  0001 C CNN
-	1    3850 2000
+P 3600 2350
+F 0 "C7" H 3718 2396 50  0000 L CNN
+F 1 "47µ" H 3718 2305 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 3638 2200 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/420/United-Chemi-Con-1511408.pdf" H 3600 2350 50  0001 C CNN
+	1    3600 2350
 	1    0    0    -1  
 $EndComp
 $Comp
 L stmbl:R R8
 U 1 1 5CCAFFCA
-P 3500 2000
-F 0 "R8" H 3570 2046 50  0000 L CNN
-F 1 "6.8M" H 3570 1955 50  0000 L CNN
-F 2 "stmbl:R_1206" V 3430 2000 50  0001 C CNN
-F 3 "" H 3500 2000 50  0000 C CNN
-	1    3500 2000
+P 3250 2350
+F 0 "R8" H 3320 2396 50  0000 L CNN
+F 1 "6.8M" H 3320 2305 50  0000 L CNN
+F 2 "stmbl:R_1206" V 3180 2350 50  0001 C CNN
+F 3 "" H 3250 2350 50  0000 C CNN
+	1    3250 2350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2900 1050 3500 1050
-Connection ~ 2900 1050
-Connection ~ 3500 1050
+	3250 1400 3600 1400
+Connection ~ 3600 1400
 Wire Wire Line
-	3500 1050 3850 1050
-Connection ~ 3850 1050
+	3600 1400 3950 1400
 Wire Wire Line
-	3850 1050 4200 1050
+	3250 2500 3600 2500
+Connection ~ 3600 2500
 Wire Wire Line
-	2900 2150 3500 2150
-Connection ~ 2900 2150
-Connection ~ 3500 2150
+	3600 2500 3950 2500
 Wire Wire Line
-	3500 2150 3850 2150
-Connection ~ 3850 2150
+	3250 1700 3250 1950
 Wire Wire Line
-	3850 2150 4200 2150
+	3600 1700 3600 1950
 Wire Wire Line
-	3500 1350 3500 1600
+	3950 1700 3950 1950
 Wire Wire Line
-	3850 1350 3850 1600
+	3250 1950 3600 1950
+Connection ~ 3250 1950
 Wire Wire Line
-	4200 1350 4200 1600
+	3250 1950 3250 2200
+Connection ~ 3950 1950
 Wire Wire Line
-	3500 1600 3850 1600
-Connection ~ 3500 1600
+	3950 1950 3950 2200
+Connection ~ 3600 1950
 Wire Wire Line
-	3500 1600 3500 1850
-Connection ~ 4200 1600
+	3600 1950 3600 2200
 Wire Wire Line
-	4200 1600 4200 1850
-Connection ~ 3850 1600
-Wire Wire Line
-	3850 1600 3850 1850
-Wire Wire Line
-	3850 1600 4200 1600
+	3600 1950 3950 1950
 $Comp
 L Device:Varistor RV5
 U 1 1 5CCB58AB
@@ -281,15 +176,7 @@ Wire Wire Line
 Wire Wire Line
 	1500 1500 1500 1600
 Wire Wire Line
-	1950 1200 2050 1200
-Wire Wire Line
-	2050 1200 2050 1450
-Wire Wire Line
 	1950 2000 2050 2000
-Wire Wire Line
-	2050 2000 2050 1750
-Wire Wire Line
-	1950 1600 2600 1600
 Connection ~ 1500 1600
 Wire Wire Line
 	1500 1600 1650 1600
@@ -534,7 +421,7 @@ U 1 1 5CCD55A5
 P 1950 5100
 F 0 "C3" H 2068 5146 50  0000 L CNN
 F 1 "2.2µ" H 2068 5055 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_6.3x3" H 1988 4950 50  0001 C CNN
+F 2 "Capacitors_SMD:CP_Elec_6.3x4.5" H 1988 4950 50  0001 C CNN
 F 3 "" H 1950 5100 50  0000 C CNN
 	1    1950 5100
 	1    0    0    -1  
@@ -586,28 +473,13 @@ U 1 1 5CCE1EA2
 P 4300 4600
 F 0 "TR1" H 4228 4907 50  0000 L CNN
 F 1 "750871110" H 4150 3850 50  0000 L CNN
-F 2 "Varistor:RV_Disc_D12mm_W4.5mm_P7.5mm" H 4300 4600 50  0001 C CNN
+F 2 "altair04:750871110" H 4300 4600 50  0001 C CNN
 F 3 "" H 4300 4600 50  0001 C CNN
 	1    4300 4600
 	1    0    0    -1  
 $EndComp
-$Comp
-L Diode:1.5KExxA D8
-U 1 1 5CCE6E5E
-P 3750 3750
-F 0 "D8" V 3796 3671 50  0000 R CNN
-F 1 "1.5KExxA" V 3705 3671 50  0000 R CNN
-F 2 "Diode_THT:D_DO-201AE_P15.24mm_Horizontal" H 3750 3550 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 3700 3750 50  0001 C CNN
-	1    3750 3750
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3750 3600 3950 3600
 Wire Wire Line
 	3750 4500 3950 4500
-Wire Wire Line
-	3750 3900 3750 4200
 Wire Wire Line
 	3950 4800 3400 4800
 Connection ~ 3400 4800
@@ -636,11 +508,6 @@ Wire Wire Line
 Connection ~ 3750 5150
 Wire Wire Line
 	3750 5150 3750 5250
-Wire Wire Line
-	2700 4950 1950 4950
-Wire Wire Line
-	2750 4950 2700 4950
-Connection ~ 2700 4950
 $Comp
 L altair04:ALTAIR04-900 U1
 U 1 1 5CCC6844
@@ -665,19 +532,14 @@ Connection ~ 3700 5750
 $Comp
 L stmbl:GND #PWR0103
 U 1 1 5CCF4188
-P 2600 2250
-F 0 "#PWR0103" H 2600 2000 50  0001 C CNN
-F 1 "GND" H 2605 2077 50  0000 C CNN
-F 2 "" H 2600 2250 50  0001 C CNN
-F 3 "" H 2600 2250 50  0001 C CNN
-	1    2600 2250
+P 2250 2350
+F 0 "#PWR0103" H 2250 2100 50  0001 C CNN
+F 1 "GND" H 2255 2177 50  0000 C CNN
+F 2 "" H 2250 2350 50  0001 C CNN
+F 3 "" H 2250 2350 50  0001 C CNN
+	1    2250 2350
 	1    0    0    -1  
 $EndComp
-Text GLabel 3550 3600 0    50   Input ~ 0
-DC+
-Wire Wire Line
-	3550 3600 3750 3600
-Connection ~ 3750 3600
 Wire Wire Line
 	4700 4350 4650 4350
 Wire Wire Line
@@ -881,7 +743,7 @@ U 1 1 5CCC7CE3
 P 10150 2900
 F 0 "U6" H 10290 2953 60  0000 L CNN
 F 1 "NFET" H 10290 2847 60  0000 L CNN
-F 2 "" H 9950 2750 60  0001 C CNN
+F 2 "stmbl:SOT-23" H 9950 2750 60  0001 C CNN
 F 3 "" H 9950 2750 60  0001 C CNN
 	1    10150 2900
 	1    0    0    -1  
@@ -892,7 +754,7 @@ U 1 1 5CCC8D0D
 P 10150 2450
 F 0 "U5" H 10290 2397 60  0000 L CNN
 F 1 "NFET" H 10290 2503 60  0000 L CNN
-F 2 "" H 9950 2300 60  0001 C CNN
+F 2 "stmbl:SOT-23" H 9950 2300 60  0001 C CNN
 F 3 "" H 9950 2300 60  0001 C CNN
 	1    10150 2450
 	1    0    0    1   
@@ -1046,5 +908,108 @@ F 2 "" H 6500 2150 50  0001 C CNN
 F 3 "" H 6500 2150 50  0001 C CNN
 	1    6500 2150
 	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 4950 2700 4950
+Connection ~ 2700 4950
+Wire Wire Line
+	2700 4950 2750 4950
+Text Label 2450 4950 0    50   ~ 0
+VCC
+Text Label 2050 5550 0    50   ~ 0
+FB
+Text Label 1850 5650 0    50   ~ 0
+COMP
+Text Label 2400 5950 0    50   ~ 0
+IREF
+Text Label 3700 5850 0    50   ~ 0
+SRC
+Text Label 3750 5000 0    50   ~ 0
+DRN
+$Comp
+L Device:D_Bridge_+A-A D1
+U 1 1 5DAD0999
+P 2550 1150
+F 0 "D1" V 2596 806 50  0000 R CNN
+F 1 "D_Bridge_+A-A" V 2505 806 50  0000 R CNN
+F 2 "Diodes_SMD:Diode_Bridge_MBLS" H 2550 1150 50  0001 C CNN
+F 3 "~" H 2550 1150 50  0001 C CNN
+	1    2550 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Bridge_+A-A D2
+U 1 1 5DAEC40C
+P 2550 2000
+F 0 "D2" V 2596 1656 50  0000 R CNN
+F 1 "D_Bridge_+A-A" V 2505 1656 50  0000 R CNN
+F 2 "Diodes_SMD:Diode_Bridge_MBLS" H 2550 2000 50  0001 C CNN
+F 3 "~" H 2550 2000 50  0001 C CNN
+	1    2550 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1150 2850 2000
+Connection ~ 2850 1150
+Wire Wire Line
+	2250 1150 2250 2000
+Connection ~ 2250 2000
+Wire Wire Line
+	2250 2000 2250 2350
+Wire Wire Line
+	2550 2650 2550 2300
+Wire Wire Line
+	2550 1450 2550 1600
+Wire Wire Line
+	1950 1200 2050 1200
+Wire Wire Line
+	2550 850  2050 850 
+Wire Wire Line
+	2050 850  2050 1200
+Wire Wire Line
+	2550 2650 2050 2650
+Wire Wire Line
+	2050 2650 2050 2000
+Wire Wire Line
+	1950 1600 2550 1600
+Connection ~ 2550 1600
+Wire Wire Line
+	2550 1600 2550 1700
+Text GLabel 3600 1350 1    50   Input ~ 0
+DC+
+Wire Wire Line
+	3600 1350 3600 1400
+$Comp
+L stmbl:GND #PWR0109
+U 1 1 5DB5458B
+P 3600 2550
+F 0 "#PWR0109" H 3600 2300 50  0001 C CNN
+F 1 "GND" H 3605 2377 50  0000 C CNN
+F 2 "" H 3600 2550 50  0001 C CNN
+F 3 "" H 3600 2550 50  0001 C CNN
+	1    3600 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2550 3600 2500
+Connection ~ 3750 3600
+Wire Wire Line
+	3550 3600 3750 3600
+Text GLabel 3550 3600 0    50   Input ~ 0
+DC+
+Wire Wire Line
+	3750 3900 3750 4200
+Wire Wire Line
+	3750 3600 3950 3600
+$Comp
+L Diode:1.5KExxA D8
+U 1 1 5CCE6E5E
+P 3750 3750
+F 0 "D8" V 3796 3671 50  0000 R CNN
+F 1 "1.5KExxA" V 3705 3671 50  0000 R CNN
+F 2 "stmbl:SMA_Standard" H 3750 3550 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 3700 3750 50  0001 C CNN
+	1    3750 3750
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
